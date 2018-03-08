@@ -9,13 +9,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  .tales {
+  width: 100%;
+  height: 200px;
+}
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-xl bg-success">1 of 3</div>
-      <div class="col-xl bg-warning">2 of 3</div>
-      <div class="col-xl bg-success">3 of 3</div>
-    </div>  
+ <div id="myCarousel" class="carousel slide">
+<ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1"></li>
+  <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+  <div class="active item">
+    <img src="http://images.performgroup.com/di/library/GOAL/56/b5/cristiano-ronaldo-real-madrid-300th-la-liga-goal_aysan5817pgf1pzprgoofy559.jpg?t=-308834495&w=200&h=250" class: "tales">
+  </div>
+  <div class="item">
+  <img src="http://d3aeoi5a6g6m4p.cloudfront.net/image/movella/201710111754112270/cover/200/250/true/true/F9F9FA/e3e10c570137522c8ceaee15d80d553d" class:"tales">
+  </div>
+  <div class="item"> 
+    <%= image_tag "slider/slide-bg-3.jpg", class: "tales" %>
+  </div>
+</div>
+<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </body>
 </html> 
